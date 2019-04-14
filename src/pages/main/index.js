@@ -28,7 +28,7 @@ class Main extends Component {
     return (
       <div id="main-container">
       <form onSubmit={this.handleSubmit}>
-        <img src={logo} alt="" width="250px" height="65px" />
+        <img src={logo} alt="" width="250px" height="65px" style={{flex:1,resizeMode: 'contain', alignSelf:'center'}}/>
         <input placeholder="Criar uma box" 
                value={this.state.newBox}
                onChange={this.handleInputChange}        
